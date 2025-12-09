@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -qqy --no-install-recommends \
-    ca-certificates curl wget procps systemd-sysv iproute2 openssh-client openssh-server sudo jq
+    ca-certificates curl wget procps systemd iproute2 openssh-client openssh-server sudo jq
 
 RUN wget https://tridentiot.github.io/apt-repository/README.md -qO -  | grep -E '^    ' | sudo bash
 RUN rm -f /opt/z-way-server/automation/storage/*
