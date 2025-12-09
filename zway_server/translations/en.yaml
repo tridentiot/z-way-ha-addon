@@ -8,13 +8,13 @@ configuration:
     description: Forcibly overwrite the port in the "Z-Wave Network Access" application
   remote_access:
     name: Allow remote access
-    description: Allow remote access via find.z-wave.me. Required for remote access via Z-Wave.Me mobile app
+    description: Allow remote access via find.z-wave.me. Required for remote access via Trident IoT mobile app
   remote_support_access:
     name: Enable access for tech support
-    description: Allow SSH access to the Z-Wave.Me add-on for technical support (does not provide any access to the host system)
+    description: Allow SSH access to the Trident IoT add-on for technical support (does not provide any access to the host system)
   zbw_password:
     name: Password for remote tech support
-    description: Set an SSH password for Z-Wave.Me technical. When contacting technical support, you might need to allow remote support access. Specify the password and inform technical support along with the remote access ID.
+    description: Set an SSH password for Trident IoT technical. When contacting technical support, you might need to allow remote support access. Specify the password and inform technical support along with the remote access ID.
   local_ip:
     name: IP address of the controller
     description: You can specify the real ip for z-way manually, this is necessary for those cases if you have problems with access via homeassistant.local:8083

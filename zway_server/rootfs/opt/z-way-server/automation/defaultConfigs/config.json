@@ -221,7 +221,7 @@
 		"active": false,
 		"title": "Apple HomeKit Gate",
 		"params": {
-			"name": "Z-Wave.Me",
+			"name": "Trident IoT",
 			"skippedDevices": [],
 			"idMapping": {}
 		}

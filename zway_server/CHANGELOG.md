@@ -1,3 +1,8 @@
+## 5.1.1
+
+- Update to the latest Z-Way from Trident IoT
+- Added amdd64 arch, removed armhf arch
+
 ## 4.1.0
 
 - Update to v4.1.0
