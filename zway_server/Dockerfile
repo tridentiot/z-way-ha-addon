@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -qqy --no-install-recommends \
-    ca-certificates curl wget procps iproute2 openssh-client openssh-server sudo jq
+    ca-certificates curl wget procps iproute2 openssh-client openssh-server sudo jq sharutils gawk net-tools
 
 # Create a fake systemctl so package scripts don't fail
 RUN printf '#!/bin/sh\nexit 0\n' > /usr/bin/systemctl && chmod +x /usr/bin/systemctl
