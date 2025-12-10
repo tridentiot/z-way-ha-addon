@@ -6,7 +6,6 @@ startup: services  # Determines when the add-on should start
 arch:
   - amd64
   - aarch64
-  - armhf  # Architectures the add-on can run on
 init: false
 host_network: true
 host_dbus: true
