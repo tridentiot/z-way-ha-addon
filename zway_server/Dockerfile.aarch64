@@ -8,6 +8,9 @@ RUN apt-get update && \
     apt-get install -qqy --no-install-recommends \
     ca-certificates curl wget procps iproute2 openssh-client openssh-server sudo jq
 
+# Create a fake systemctl so package scripts don't fail
+RUN printf '#!/bin/sh\nexit 0\n' > /usr/bin/systemctl && chmod +x /usr/bin/systemctl
+
 RUN wget https://tridentiot.github.io/apt-repository/README.md -qO -  | grep -E '^    ' | sudo bash
 RUN rm -f /opt/z-way-server/automation/storage/*
 
