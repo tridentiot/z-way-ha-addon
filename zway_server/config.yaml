@@ -1,5 +1,5 @@
 name: Trident IoT Add-on
-version: v4.1.4
+version: v5.1.1
 slug: zway_server
 description: 'Trident IoT Z-Way add-on for Home Assistant'
 startup: services  # Determines when the add-on should start
