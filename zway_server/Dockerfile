@@ -12,6 +12,7 @@ RUN apt-get update && \
 RUN printf '#!/bin/sh\nexit 0\n' > /usr/bin/systemctl && chmod +x /usr/bin/systemctl
 
 RUN wget https://tridentiot.github.io/apt-repository/README.md -qO -  | grep -E '^    ' | sudo bash
+RUN wget https://github.com/tridentiot/z-way-builds/releases/download/nightly/z-way-debian-bookworm-amd64-5.0.2-235-gf7b037ac.bookworm-1_amd64.deb && apt-get install -y ./z-way-debian-bookworm-amd64-5.0.2-235-gf7b037ac.bookworm-1_amd64.deb && rm z-way-debian-bookworm-amd64-5.0.2-235-gf7b037ac.bookworm-1_amd64.deb
 RUN rm -f /opt/z-way-server/automation/storage/*
 
 RUN echo "ha" > /etc/z-way/box_type
